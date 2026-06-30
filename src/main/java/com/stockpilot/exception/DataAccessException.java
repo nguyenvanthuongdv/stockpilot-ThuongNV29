@@ -1,4 +1,7 @@
 package com.stockpilot.exception;
 
-public class DataAccessException {
+public class DataAccessException extends RuntimeException{
+    public DataAccessException(String message) {
+        super(message);
+    }
 }

@@ -17,7 +17,7 @@ create table if not exists orders(
     customer_id bigint not null,
     order_date timestamp default current_timestamp,
     total_amount decimal(10,2) not null,
-    FOREIGN KEY (customer_id) REFERENCES customers(id),
+    FOREIGN KEY (customer_id) REFERENCES customers(id)
 )
 create table if not exists order_items(
     id bigint auto_increment primary key,
@@ -26,5 +26,5 @@ create table if not exists order_items(
     quantity int not null,
     unit_price decimal(10,2) not null,
     FOREIGN KEY (order_id) REFERENCES orders(id),
-    FOREIGN KEY (product_id) REFERENCES products(id),
+    FOREIGN KEY (product_id) REFERENCES products(id)
 )

@@ -1,0 +1,11 @@
+sku,name,category,price,stock_quantity
+APP-0001,iPhone 15 Pro,Electronics,999.99,50
+SAM-0002,Galaxy S24,Electronics,899.50,100
+MAC-0003,MacBook Air M2,Computers,1199.00,30
+DEL-0004,Dell XPS 13,Computers,1300.00,20
+SON-0005,Sony WH-1000XM5,Accessories,348.00,75
+LOG-0006,Logitech MX Master 3S,Accessories,99.99,150
+KIN-0007,Kindle Paperwhite,Books,139.99,200
+NIN-0008,Nintendo Switch OLED,Gaming,349.99,40
+PS5-0009,PlayStation 5,Gaming,499.99,15
+XBO-0010,Xbox Series X,Gaming,499.99,25
