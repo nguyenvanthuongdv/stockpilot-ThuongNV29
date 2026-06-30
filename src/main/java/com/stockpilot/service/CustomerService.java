@@ -38,12 +38,12 @@ public class CustomerService {
         }
         validateEmail(customer.getEmail());
         validatePhone(customer.getPhone());
-        getCustomerById(customer.getId()); // ensure exists
+        getCustomerById(customer.getId());
         customerRepository.update(customer);
     }
 
     public void deleteCustomer(Long id) {
-        getCustomerById(id); // ensure exists
+        getCustomerById(id);
         customerRepository.deleteById(id);
     }
 

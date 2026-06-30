@@ -19,7 +19,6 @@ public class ProductService {
 
     public Product createProduct(Product product) {
         validateSku(product.getSku());
-        // Check if SKU already exists
         Optional<Product> existing = productRepository.findBySku(product.getSku());
         if (existing.isPresent()) {
             throw new InvalidInputException("Product with SKU " + product.getSku() + " already exists.");
@@ -46,13 +45,11 @@ public class ProductService {
             throw new InvalidInputException("Product ID cannot be null for update.");
         }
         validateSku(product.getSku());
-        // Ensure the product exists before updating
         getProductById(product.getId());
         productRepository.update(product);
     }
 
     public void deleteProduct(Long id) {
-        // Ensure it exists
         getProductById(id);
         productRepository.deleteById(id);
     }
